@@ -2,6 +2,7 @@ name: Java CI with Maven - Test and package
 
 on: [pull_request]
 
+# Workflow
 jobs:
   build:
     
@@ -16,7 +17,7 @@ jobs:
         with:
           distribution: 'corretto'
           java-version: '21'
-          
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
