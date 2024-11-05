@@ -24,7 +24,7 @@ jobs:
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=$(echo ${{ github.repository }} | sed 's-/-_-') \
-          -Dsonar.login=$SONAR_TOKEN
+          -Dsonar.token=$SONAR_TOKEN
 
 
 
