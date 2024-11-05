@@ -6,6 +6,7 @@ jobs:
   Salutations: # Nom du job : Salutations
     name: Salutations
     runs-on: ubuntu-latest # OS où s'exécute le job
+    if: false
     steps:
       - name: Hello #une tâche pour saluer
         env:
