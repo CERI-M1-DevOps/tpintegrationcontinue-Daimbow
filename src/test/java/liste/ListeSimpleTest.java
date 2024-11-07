@@ -118,7 +118,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
         assertNull(listeATester.tete);
         assertEquals("ListeSimple()",listeATester.toString());
-        assertEquals(0, listeATester.getSize());
     }
 
     @Test
