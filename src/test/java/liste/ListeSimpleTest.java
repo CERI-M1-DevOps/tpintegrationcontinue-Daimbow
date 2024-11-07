@@ -64,6 +64,14 @@ import static org.junit.jupiter.api.Assertions.*;
     }
 
     @Test
+    void modifiePremierListeVide() {
+        
+        listeATester.modifiePremier(1, 10);
+        
+        assertEquals("ListeSimple()", listeATester.toString());
+    }
+
+    @Test
      void modifieTous() {
         listeATester.ajout(1);
         listeATester.ajout(2);
@@ -73,6 +81,7 @@ import static org.junit.jupiter.api.Assertions.*;
         assertEquals("ListeSimple(Noeud(4), Noeud(4), Noeud(2), Noeud(4))",listeATester.toString());
         assertEquals(4, listeATester.tete.getSuivant().getElement());
     }
+    
 
     @Test
      void supprimePremierListeVide() {
