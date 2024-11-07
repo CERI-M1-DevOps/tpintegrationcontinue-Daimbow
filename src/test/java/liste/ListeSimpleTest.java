@@ -180,16 +180,14 @@ import static org.junit.jupiter.api.Assertions.*;
         
         assertEquals("ListeSimple(Noeud(3), Noeud(2), Noeud(1))", listeATester.toString());
         
-        // Tenter de supprimer un élément qui n'existe pas (élément 4)
+        
         listeATester.supprimePremier(4);
         
-        // Vérifier que la liste n'a pas été modifiée
         assertEquals("ListeSimple(Noeud(3), Noeud(2), Noeud(1))", listeATester.toString());
         
-        // Vérifier qu'après avoir cherché jusqu'à la fin, l'élément n'a pas été trouvé
         Noeud courant = listeATester.tete;
         while (courant != null) {
-            assertNotEquals(4, courant.getElement());  // Vérifier que l'élément 4 n'est jamais rencontré
+            assertNotEquals(4, courant.getElement()); 
             courant = courant.getSuivant();
         }
     }
