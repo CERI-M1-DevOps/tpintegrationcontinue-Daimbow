@@ -22,6 +22,7 @@ jobs:
               distribution: 'corretto'
               java-version: '21'
 
+
           - name: Build with Maven JavaDoc
             run: |
               mvn -B javadoc:javadoc
