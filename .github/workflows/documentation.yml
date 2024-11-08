@@ -1,4 +1,4 @@
-name: Java CI with Maven - Test and package
+name: Documentions JAVADOC
 
 
 on:
@@ -27,7 +27,6 @@ jobs:
               mvn -B javadoc:javadoc
 
           - name: Deploy
-            if: github.event.pull_request.merged == true
             uses: peaceiris/actions-gh-pages@v4
             with:
               github_token: ${{ secrets.DOC_TOKEN }}
