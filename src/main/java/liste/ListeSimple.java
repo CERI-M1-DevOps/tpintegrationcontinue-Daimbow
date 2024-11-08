@@ -165,6 +165,16 @@ public class ListeSimple {
         return precedent;
     }
 
+    /**
+     * Echange deux noeuds dans la liste.
+     *
+     * @param r1 Le premier noeud à échanger.
+     * @param r2 Le second noeud à échanger.
+     * 
+     * Si r1 et r2 sont identiques, la méthode ne fait rien.
+     * La méthode met à jour les références des noeuds précédents 
+     * et suivants pour r1 et r2 afin de les échanger dans la liste.
+     */
     public void echanger(Noeud r1, Noeud r2) {
         if (r1 == r2)
             return;
