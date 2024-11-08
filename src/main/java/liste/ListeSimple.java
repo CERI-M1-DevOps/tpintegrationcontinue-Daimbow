@@ -171,7 +171,7 @@ public class ListeSimple {
      * @param r1 Le premier noeud à échanger.
      * @param r2 Le second noeud à échanger.
      * 
-     * Si r1 et r2 sont identiques, la méthode ne fait rien.
+     * Si r1 et r2 sont identiques, la méthode ne fait rien
      * La méthode met à jour les références des noeuds précédents 
      * et suivants pour r1 et r2 afin de les échanger dans la liste.
      */
