@@ -138,6 +138,16 @@ public class ListeSimple {
         }
     }
 
+
+/*************  ✨ Codeium Command ⭐  *************/
+    /**
+     * Inverse l'ordre des éléments dans la liste.
+     *
+     * Cette méthode modifie la liste chaînée en inversant l'ordre de ses noeuds.
+     * Après l'exécution de cette méthode, le dernier noeud devient le premier et
+     * le premier devient le dernier.
+     */
+/******  1b331ef8-1aa8-402e-a6e4-5d89e62e3b55  *******/
     public void inverser() {
         Noeud precedent = null;
         Noeud courant = tete;
